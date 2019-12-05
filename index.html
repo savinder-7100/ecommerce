@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>javascript</title>
+	</head>
+	<body>
+        <h1>ECommerce Checkout</h1>
+        <p>Product Quantity Unit Price Extended Price</p>
+		<div class="container">
+			Pants <input type="button" onclick="decrementValue()" value="-" />
+			<input type="text" name="quantity" value="0"  max="10" size="1" id="number" />
+			<input type="button" onclick="incrementValue()" value="+" />&nbsp;&nbsp;$40.99
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			$<input type="text" name="quantity" value="0"   id="number1"  style="border:none;font-size:14px;width:200px;">
+		</div>
+		</br>
+		<div class="container">
+			Shirt <input type="button" onclick="decrementValue2()" value="-" />
+			<input type="text" name="quantity2" value="0"  max="10" size="1" id="number2" />
+			<input type="button" onclick="incrementValue2()" value="+" />&nbsp;&nbsp;$10.99
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			$<input type="text" name="quantity2" value="0"   id="number3"  style="border:none;font-size:14px;width:200px;">
+			<input type="hidden"  value="13"   id="number4"  style="border:none;font-size:14px;width:200px;">
+		</div></br></br>
+		<input type="button" onclick="calculate()" value="Calculate" />
+		</br>
+		</br>
+		<table>
+			<tr>
+				<td>SUB TOTAL:</td>
+				<td><p id="answer">$</p>
+		</td>
+			</tr>
+			<tr>
+				<td>TAX:</td>
+				<td><p id="taxanswer">$</p>
+			</tr>
+			<tr>
+				<td>TOTAL:</td>
+				<td><p id="total">$</p></td>
+			</tr>
+		</table></br>
+		<h3>Have A Promo Code&nbsp;&nbsp;<input type="button" onclick="enter()" value="Click To Enter" ></h3>
+		
+		<p id="demo"></p><input type="button" onclick="nott()" value="submit" />
+        <p id="answer1"></p>
+        <script src="/index.js"></script>
+    </body>
+
+    </html>
